@@ -1,0 +1,299 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Droid Sans', 'more font stack stuff', sans-serif;
+    color: darkgoldenrod;
+    background-color: #392D00;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font: bold 2.618rem 'Droid Serif', 'more font stack stuff', serif;
+}
+h2 {
+    font: bold 1.618rem 'Droid Serif', 'more font stack stuff', serif;
+}
+li,
+p,
+a {
+    color: cornsilk;
+    font: bold 1.0rem 'Droid Sans', 'more font stack stuff', sans-serif;
+    padding: 5px 0;
+    list-style-type: none;
+}
+pre,
+code,
+kbd {
+    font: normal 1.0rem 'Droid Sans Mono', 'more font stack stuff',
+}
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+header h1 {
+    color: black;
+    text-shadow: 1px 1px 5px blue;
+}
+header {
+    width: 100%;
+    background-image: url(./image/purple_apple-wallpaper-2560x1600.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.box {
+    width: 95%;
+    margin: 2px -5px 0px 59px;
+}
+nav {
+    width: 100%;
+    margin-top: 10px;
+}
+nav ul {
+    width: 100%;
+    padding: 0 0 0 0;
+    list-style: none;
+}
+nav>ul {
+    width: 100%;
+}
+a {
+    color: deepskyblue;
+    text-decoration: none;
+}
+p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+nav li {
+    width: 100%;
+    list-style: none;
+}
+nav a,
+nav a:link,
+nav a:visited {
+    background-color: #303030;
+    text-decoration: none;
+    display: block;
+    font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+    text-align: center;
+    margin: 0 0 -4px 0;
+}
+nav a:active,
+nav a:focus,
+nav a:hover {
+    color: darkorchid;
+}
+main {
+    width: 100%;
+}
+.col {
+    float: none;
+    width: 100%;
+}
+.col img {
+    width: 350px;
+    height: 150px;
+    max-width: 100%;
+    float: left;
+    margin: -6px 10px 10px 0;
+}
+footer {
+    background-color: #303030;
+}
+@media screen and (min-width:600px) {
+    .wrapper {
+        width: 100%;
+        background-color: black;
+    }
+    header {
+        background-image: url(./image/purple_apple-wallpaper-2560x1600.jpg) width: 100%;
+    }
+    nav {
+        width: 100%;
+        margin: auto;
+    }
+    nav ul {
+        margin: 0;
+    }
+    nav li {
+        display: inline;
+        border: none;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        width: 20%;
+        float: left;
+        background-color: #424242;
+        margin: 0;
+        font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+        text-align: center;
+    }
+    nav a:active,
+    nav a:focus,
+    nav a:hover {}
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .col {
+        float: left;
+        width: 50%;
+        padding: 0 1rem 0 0;
+    }
+    .col:last-child {
+        padding: 0;
+    }
+    .col img {
+        width: 60%;
+        height: auto;
+        max-width: 100%;
+        background-color: darkgoldenrod;
+        margin: 5px 15px -1px 0;
+    }
+    footer {
+        width: 90%;
+        float: right;
+        margin: 10px 60px;
+    }
+}
+@media screen and (min-width: 800px) {
+    nav {
+        width: 90%;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        text-align: left;
+        background-color: coral;
+    }
+    main {
+        width: 90%;
+    }
+    h1 {
+        font-size: 4.236rem;
+    }
+    .col {
+        float: left;
+        width: 50%;
+    }
+    .col img {
+        width: 50%;
+        height: auto;
+        max-width: 100%;
+        margin: 5px 10px 0 0;
+    }
+    footer {
+        width: 100%;
+        float: right;
+        margin: 10px 0px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: 100rem;
+        margin: 0 auto;
+        width: 100%;
+        background-color: cornflowerblue;
+    }
+    h1 {
+        font-size: 6.854rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.618rem;
+    }
+    nav {
+        width: 30%;
+        margin: 18px 0 0 0;
+        float: left;
+    }
+    nav ul {
+        width: 100%;
+    }
+    nav li {
+        display: block;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        float: none;
+        background-color: khaki;
+        color: slateblue;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+        text-align: left;
+    }
+    a:active,
+    a:focus,
+    a:hover {
+        color: red;
+    }
+    .main {
+        width: 70%;
+        float: left;
+    }
+    header {
+        width: 100%;
+        background-image: url(./image/purple_apple-wallpaper-2560x1600.jpg);
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    .col {
+        float: left;
+        width: 50%;
+    }
+    .col img {
+        width: 350px;
+        height: 150px;
+        max-width: 100%;
+        float: left;
+        margin: 20px 11px -1px 2px;
+    }
+    header h1 {
+        color: black;
+        text-shadow: 10px 9px 16px red;
+    }
+    footer {
+        width: 100%;
+        background-color: #2E233E;
+        clear: both;
+    }
+}
